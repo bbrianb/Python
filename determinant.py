@@ -2,7 +2,6 @@ def det(matrix):
     if (len(matrix)) == 1:
         return matrix[0]
     else:
-        print(f'{matrix=}')
         determinant = 0
         k = 1
         i = 1
@@ -59,8 +58,8 @@ Dz = det(Dz)
 x = Dx/D
 y = Dy/D
 z = Dz/D
-print(f'{D=}')
-print(f'{x=}, {y=}, {z=}')
+# print(f'{D=}')
+# print(f'{x=}, {y=}, {z=}')
 
 B = [[1, 2, -1, -2],
      [3, -4, -3, 0],
@@ -68,4 +67,18 @@ B = [[1, 2, -1, -2],
      [-2, 5, 0, 4]
      ]
 print(f'{det(B)=}')
-print('area =', 0.5*abs(det(B)))
+C = [[2, -1, -2],
+     [-4, -3, 0],
+     [5, 0, 4]]
+print(f'{det(C)=}')
+E = [[1, 2, -1],
+     [3, -4, -3],
+     [-2, 5, 0]]
+print(f'{det(E)=}')
+F = [[2, -1],
+     [-4, -3]]
+print(f'{det(F)=}')
+G = [[1, -1],
+     [3, -3]]
+print(f'{det(G)=}')
+# print('area =', 0.5*abs(det(B)))
